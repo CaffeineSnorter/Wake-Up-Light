@@ -1,0 +1,24 @@
+# Archivos .gitkeep usados para mantener carpetas vacías
+*.gitkeep
+
+# Archivos de compilación de LaTeX
+*.aux
+*.bbl
+*.blg
+*.log
+*.out
+*.toc
+*.lof
+*.lot
+*.fls
+*.fdb_latexmk
+*.synctex.gz
+
+# Archivos temporales de MicroPython / Python
+__pycache__/
+*.pyc
+
+# Archivos de simulación KiCad temporales
+*.bak
+*.tmp
+*.net
