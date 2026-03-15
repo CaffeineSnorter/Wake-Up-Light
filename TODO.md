@@ -3,8 +3,8 @@
 ## Infraestructura del proyecto
 
 - [ ] Crear archivo `config.json` si no existe
-    - [ ] Definir formato de variables
-    - [ ] Guardar variables sensibles (WiFi, tokens API)
+- [ ] Definir formato de variables
+- [ ] Guardar variables sensibles (WiFi, tokens API)
 
 ---
 
@@ -13,7 +13,7 @@
 ### Módulo WiFi
 
 - [ ] Crear módulo `wifi_manager.py`
-- [ ] Implementar función robusta de conexión
+- [ ] Implementar función de conexión
 - [ ] Implementar reconexión automática
 - [ ] Activar Access Point si falla conexión
 - [ ] Crear interfaz mínima de configuración
