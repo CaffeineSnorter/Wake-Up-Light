@@ -1,6 +1,6 @@
 import os
 import network
-import setup_net
+from system import setup_net
 
 def config_available(path: str):
     try:
@@ -16,6 +16,6 @@ def set_id():
 
 def deploy_server(id: str):
     web_page = setup_net.get_web_page()
-    setup_net.set_ap()
+    setup_net.set_ap(id)
     setup_net.get_socket(web_page)
     

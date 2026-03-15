@@ -3,9 +3,10 @@ import socket
 import json
 
 def get_ssid_list():
-    station = network.WLAN(mode=network.WLAN.STA)
+    station = network.WLAN(network.STA_IF)
+    station.active(True)
     networks = station.scan()
-    return [i[1] for i in networks]
+    return [i[0] for i in networks]
 
 def get_web_page():
     options = get_ssid_list()
