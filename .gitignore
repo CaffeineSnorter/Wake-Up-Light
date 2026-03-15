@@ -1,5 +1,6 @@
 # Archivos .gitkeep usados para mantener carpetas vacías
 *.gitkeep
+*.env
 
 # Archivos de compilación de LaTeX
 *.aux
