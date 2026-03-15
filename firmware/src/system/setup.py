@@ -15,7 +15,7 @@ def set_id():
     return ''.join('{:02x}'.format(b) for b in mac[-3:])
 
 def deploy_server(id: str):
-    web_page = get_web_page()
-    set_ap()
-    get_socket(web_page)
+    web_page = setup_net.get_web_page()
+    setup_net.set_ap()
+    setup_net.get_socket(web_page)
     
