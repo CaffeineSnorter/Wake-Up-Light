@@ -2,7 +2,7 @@
 
 ## Infraestructura del proyecto
 
-- [ ] Crear archivo `.env` si no existe
+- [ ] Crear archivo `config.json` si no existe
     - [ ] Definir formato de variables
     - [ ] Guardar variables sensibles (WiFi, tokens API)
 
