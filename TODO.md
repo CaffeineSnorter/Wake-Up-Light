@@ -2,9 +2,8 @@
 
 ## Infraestructura del proyecto
 
-- [ ] Crear archivo `config.json` si no existe
-- [ ] Definir formato de variables
-- [ ] Guardar variables sensibles (WiFi, tokens API)
+- [x] Crear logica de configuración `config.json` si no existe
+- [x] Guardar variables sensibles (WiFi, tokens API)
 
 ---
 
@@ -12,7 +11,7 @@
 
 ### Módulo WiFi
 
-- [ ] Crear módulo `wifi_manager.py`
+- [ ] Crear módulo `wifi.py`
 - [ ] Implementar función de conexión
 - [ ] Implementar reconexión automática
 - [ ] Activar Access Point si falla conexión
@@ -113,7 +112,7 @@ Curvas posibles:
 
 ### Tests
 
-- [ ] Crear carpeta `tests/`
+- [x] Crear carpeta `tests/`
 - [ ] Tests de:
     - curvas de dimming
     - parsing de APIs
