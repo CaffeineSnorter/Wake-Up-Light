@@ -6,14 +6,14 @@ def get_ssid_list():
     station = network.WLAN(network.STA_IF)
     station.active(True)
     networks = station.scan()
-    return [i[0] for i in networks]
+    return [i[0].decode('utf-8') for i in networks]
 
 def get_web_page():
     options = get_ssid_list()
 
     string=""
     for ssid in options:
-        string += f"""<option value="{ssid}">{ssid}</option>"""
+        string += f"""<option value={ssid}>{ssid}</option>"""
 
     html = """
     <html>
