@@ -13,14 +13,14 @@ def get_web_page():
 
     string=""
     for ssid in options:
-        string += f"""<option value={ssid}>{ssid}</option>"""
+        string += f"""<option value="{ssid}">{ssid}</option>"""
 
     html = """
     <html>
     <body>
     <h2>Wake Up Lamp wifi setup</h2>
     <form method="POST">
-    <label for="ssid">SSID</label>
+    <label for="ssid">SSID: </label>
     <select name="ssid" id="ssid">
     """+ string + """</select>
     Password:<br>
