@@ -35,7 +35,7 @@ def set_ap(id: str):
 
     ap = network.WLAN(network.AP_IF)
     ap.active(True)
-    ap.config(essid=SSID,password=PASSWORD)
+    ap.config(essid=SSID, key=PASSWORD)
 
     while ap.active()==False:
         pass
