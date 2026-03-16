@@ -4,6 +4,7 @@
 
 - [x] Crear logica de configuración `config.json` si no existe
 - [x] Guardar variables sensibles (WiFi, tokens API)
+- [ ] Cambiar nombre de modulos a camelCase
 
 ---
 
