@@ -1,7 +1,7 @@
 import network
 from time import sleep
 
-def connect(ssid: str, password: str):
+def connect(ssid: str, password: str, timeout: int):
 
     wlan = network.WLAN(network.STA_IF)
     wlan.active(True)
@@ -13,10 +13,10 @@ def connect(ssid: str, password: str):
     print(f"Connecting to {ssid}...")
     wlan.connect(ssid, password)
 
-    timeout = 10
-    while not wlan.isconnected() and timeout > 0:
+    timeout_ = timeout
+    while not wlan.isconnected() and timeout_ > 0:
         sleep(1)
-        timeout -= 1
+        timeout_ -= 1
     if wlan.isconnected():
         print(wlan.ipconfig('addr4'))
         return True

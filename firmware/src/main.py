@@ -9,5 +9,5 @@ ssid = data["SSID"]
 password = data["PASSWORD"]
 device_id = data["ID"]
 
-if not wifi.connect(ssid=ssid, password=password):
+if not wifi.connect(ssid=ssid, password=password, timeout = 10):
     setup.deploy_server(device_id)
