@@ -6,10 +6,6 @@ from system import setup
 gc.collect()
 esp.osdebug(None)
 
-if "/modules" not in sys.path:
-    sys.path.append("/modules")
-
-
 device_id = setup.set_id()
 
 config_file = "config.json"

@@ -1,6 +1,9 @@
 import network
 import socket
 import json
+import machine
+from time import sleep
+from system import setup
 
 def get_ssid_list():
     station = network.WLAN(network.STA_IF)
@@ -57,7 +60,8 @@ def parser(info):
 def save_config(data):
     config = {
         "SSID": data["ssid"],
-        "PASSWORD": data["password"]
+        "PASSWORD": data["password"],
+        "ID": setup.set_id()
     }
 
     with open("config.json","w") as f:
@@ -78,7 +82,9 @@ def get_socket(html: str):
             body = request.split("\r\n\r\n")[1]
             data = parser(body)
             save_config(data)
-            response = "<h1>Saved. Reboot device.</h1>"
+            response = "<h1>Saved. Rebooting device.</h1>"
+            sleep(5)
+            machine.reset()
 
         else:
             
