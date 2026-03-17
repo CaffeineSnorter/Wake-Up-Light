@@ -12,11 +12,11 @@
 
 ### Módulo WiFi
 
-- [ ] Crear módulo `wifi.py`
-- [ ] Implementar función de conexión
-- [ ] Implementar reconexión automática
-- [ ] Activar Access Point si falla conexión
-- [ ] Crear interfaz mínima de configuración
+- [x] Crear módulo `wifi.py`
+- [x] Implementar función de conexión
+- [x] Implementar reconexión automática
+- [x] Activar Access Point si falla conexión
+- [x] Crear interfaz mínima de configuración
 
 Funciones esperadas:
 
